@@ -6,3 +6,4 @@ __pycache__/*
 *.back
 tagscounteralexdoka.egg-info
 dist/*
+__pycache__
