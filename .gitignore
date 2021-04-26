@@ -1,0 +1,8 @@
+venv/*
+temp/*
+__pycache__/*
+.idea/*
+*.db
+*.back
+tagscounteralexdoka.egg-info
+dist/*

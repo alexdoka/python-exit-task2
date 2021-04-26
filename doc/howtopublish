@@ -1,0 +1,21 @@
+#nota bene
+#make README.rst
+
+# in file MANIFEST.in add (for long discription on pypi)
+#include README.rst
+
+# from md in rst run
+
+pandoc --from=markdown --to=rst --output=README.rst README.md
+
+
+
+
+#making distr
+python setup.py sdist
+
+# register on pypi and install twine
+pip install twine
+
+# upload distr
+twine upload dist/*
