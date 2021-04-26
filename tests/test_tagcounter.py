@@ -40,13 +40,13 @@ class TestCalc(unittest.TestCase):
                          {'html': 1, 'a': 3, 'body': 1})
 
     def test_write_to_logfile(self):
-        logging.basicConfig(filename="/home/doka/learn/python/exit_task_7/tagscounteralexdoka/tags_log_file",
+        logging.basicConfig(filename="tagscounteralexdoka/tags_log_file",
                             level=logging.INFO,
                             format='%(asctime)s:%(message)s')
 
         tagcounter.write_to_logfile("supertest")
         result = False
-        with open('/home/doka/learn/python/exit_task_7/tagscounteralexdoka/tags_log_file', 'r') as file_object:
+        with open('tagscounteralexdoka/tags_log_file', 'r') as file_object:
             for ln in file_object:
                 if "supertest" in ln:
                     print(ln)
